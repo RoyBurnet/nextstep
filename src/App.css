@@ -1,5 +1,11 @@
+/* Font */
+@font-face {
+  font-family: EDGE;
+  src: url(fonts/EDGE-Medium.woff);
+}
+
 .App {
-  font-family: sans-serif;
+  font-family: EDGE;
   text-align: center;
   max-width: 360px;
   margin: 0 auto;
@@ -53,4 +59,84 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+/* Range Slider */
+.form-range {
+  width: 100%;
+  height: 10px;
+  padding: 0;
+  background: #CCCCCC;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #FF7D70;
+  width: 34px;
+  height: 27px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.col-100{
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.col-80{
+  flex: 0 0 auto;
+  width: 80%;
+}
+
+.col-75{
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.col-60{
+  flex: 0 0 auto;
+  width: 60%;
+}
+
+.col-50{
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-33{
+  flex: 0 0 auto;
+  width: 33%;
+}
+
+.col-25{
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-20{
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.col-10{
+  flex: 0 0 auto;
+  width: 10%;
+}
+
+.pr-20{
+  padding-right:20px
 }
