@@ -1,7 +1,7 @@
 {
   "name": "edgenextstep",
   "version": "0.1.0",
-  "homepage": "https://github.io/RoyBurnet/nextstep",
+  "homepage": "https://royburnet.github.io/nextstep/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
