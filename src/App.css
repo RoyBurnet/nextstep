@@ -34,6 +34,17 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.small-btn{
+  width: 79px;
+  height: 34px;
+  background: #FFFFFF;
+  border: 1px solid #FF7D70;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #FF7D70;
+  margin-left:14px;
+}
+
 .btn-disabled {
   color: #cccccc;
   border: 1px solid #cccccc;
@@ -51,6 +62,10 @@
   align-content: flex-start;
   width: 100%;
   text-align: left;
+}
+
+.float-right{
+  float:right;
 }
 
 .btn-container {
@@ -139,3 +154,67 @@
 .pr-20{
   padding-right:20px
 }
+
+.mt-10{
+  margin-top:10px;
+}
+
+
+/* Text (Area)field */
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.form-control{
+  width: 225px;
+  height: 34px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.form-control-area{
+  width:  320px;
+  height: 159px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Checkbox */
+.checkbox-input {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  padding-top:5px;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+.checkbox-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #FF7D70;
+  border-radius: 8px;
+}
+
+.checkbox-input input:checked ~ .checkbox-text {
+  background-color: #FF7D70;
+  border-radius: 8px;
+}
+
+
