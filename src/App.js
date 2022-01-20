@@ -22,6 +22,7 @@ export default function App() {
       <RangeSlider title='Maintenance' minText='Cool' maxText='Warm' />
       <CheckBox title='Save this to a new profile'/>
       <TextField placeholder='Name a profile'/>
+      <TextAreaField title='Can you explain?' placeholder='Write your message to us here'/>
     </div>
   );
 }
@@ -94,10 +95,20 @@ function CheckBox({ title }){
 }
 
 function TextField({ placeholder }){
- return (
-  <div class="input-group">
-    <input type="text" placeholder={placeholder} class="form-control"/>
-    <button class="small-btn">Save</button>
-  </div>
- );
+  return (
+    <div class="input-group">
+      <input type="text" placeholder={placeholder} class="form-control"/>
+      <button class="small-btn">Save</button>
+    </div>
+  );
+}
+
+function TextAreaField({ title, placeholder }){
+  return (
+    <div class="input-group">
+      <p className='text'>{title}</p>
+      <textarea placeholder={placeholder} class="form-control-area"/>
+      <button class="small-btn float-right mt-10">Send</button>
+    </div>
+  );
 }
