@@ -12,6 +12,7 @@ import List from "./components/list";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FirstPage from "./pages/firstPage";
+import LastPage from './pages/lastPage';
 
 const mainObjective = [
   {
@@ -29,11 +30,15 @@ export default function App() {
     <div className='App'>
       <div className='header'>
         <Logo />
-        <div className="intro">Goodmorning<br /> welcome at EDGE Olympic!</div>
+        <div className='intro'>
+          Goodmorning
+          <br /> welcome at EDGE Olympic!
+        </div>
       </div>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<FirstPage />}></Route>
+          <Route path='/last-page' element={<LastPage />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

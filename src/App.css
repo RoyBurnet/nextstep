@@ -8,6 +8,11 @@
   font-family: EDGETHIN;
   src: url(fonts/EDGE-Thin.woff);
 }
+
+@font-face {
+  font-family: EDGEBOOK;
+  src: url(fonts/EDGE-Book.woff);
+}
 .App {
   font-family: EDGE;
   text-align: center;
@@ -45,6 +50,10 @@
 .profile-text{
   text-align: initial;
   margin-bottom: 14px;
+}
+
+.subject {
+  font-family: EDGEBOOK;
 }
 
 .btn {
