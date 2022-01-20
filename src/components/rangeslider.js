@@ -16,7 +16,7 @@ function RangeSlider({ title, minText, maxText }) {
           id='customRange1'
         />
       </div>
-      <div class='col-20'>{maxText}</div>
+      <div class='col-30'>{maxText}</div>
     </div>
   );
 }
