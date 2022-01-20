@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/RoyBurnet/nextstep/static/css/main.cd46674a.css",
-    "main.js": "/RoyBurnet/nextstep/static/js/main.9e3589d7.js",
-    "static/js/787.982fbb8d.chunk.js": "/RoyBurnet/nextstep/static/js/787.982fbb8d.chunk.js",
-    "static/media/EDGE-Thin.woff": "/RoyBurnet/nextstep/static/media/EDGE-Thin.0909d80df53f3d189259.woff",
-    "static/media/EDGE-Medium.woff": "/RoyBurnet/nextstep/static/media/EDGE-Medium.8acdd5fc68359a492926.woff",
-    "static/media/EDGE-Book.woff": "/RoyBurnet/nextstep/static/media/EDGE-Book.11d3f6fc8ac2177144ef.woff",
-    "index.html": "/RoyBurnet/nextstep/index.html",
-    "main.cd46674a.css.map": "/RoyBurnet/nextstep/static/css/main.cd46674a.css.map",
-    "main.9e3589d7.js.map": "/RoyBurnet/nextstep/static/js/main.9e3589d7.js.map",
-    "787.982fbb8d.chunk.js.map": "/RoyBurnet/nextstep/static/js/787.982fbb8d.chunk.js.map"
+    "main.css": "/nextstep/static/css/main.70668ff0.css",
+    "main.js": "/nextstep/static/js/main.5d89f68c.js",
+    "static/js/787.982fbb8d.chunk.js": "/nextstep/static/js/787.982fbb8d.chunk.js",
+    "static/media/EDGE-Thin.woff": "/nextstep/static/media/EDGE-Thin.0909d80df53f3d189259.woff",
+    "static/media/EDGE-Medium.woff": "/nextstep/static/media/EDGE-Medium.8acdd5fc68359a492926.woff",
+    "static/media/EDGE-Book.woff": "/nextstep/static/media/EDGE-Book.11d3f6fc8ac2177144ef.woff",
+    "index.html": "/nextstep/index.html",
+    "main.70668ff0.css.map": "/nextstep/static/css/main.70668ff0.css.map",
+    "main.5d89f68c.js.map": "/nextstep/static/js/main.5d89f68c.js.map",
+    "787.982fbb8d.chunk.js.map": "/nextstep/static/js/787.982fbb8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd46674a.css",
-    "static/js/main.9e3589d7.js"
+    "static/css/main.70668ff0.css",
+    "static/js/main.5d89f68c.js"
   ]
 }
