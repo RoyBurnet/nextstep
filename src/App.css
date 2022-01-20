@@ -4,12 +4,47 @@
   src: url(fonts/EDGE-Medium.woff);
 }
 
+@font-face {
+  font-family: EDGETHIN;
+  src: url(fonts/EDGE-Thin.woff);
+}
 .App {
   font-family: EDGE;
   text-align: center;
   max-width: 360px;
   margin: 0 auto;
   padding: 4px;
+}
+
+.header {
+  margin-top: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  color: #ff7d70;
+}
+
+.intro {
+  text-align: end;
+}
+
+.cta {
+  margin-top: 57px;
+}
+
+.subtitle {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-family: EDGETHIN;
+  font-size: 14px;
+  text-align: start;
+}
+
+.profile-text{
+  text-align: initial;
+  margin-bottom: 14px;
 }
 
 .btn {
@@ -34,15 +69,15 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.small-btn{
+.small-btn {
   width: 79px;
   height: 34px;
-  background: #FFFFFF;
-  border: 1px solid #FF7D70;
+  background: #ffffff;
+  border: 1px solid #ff7d70;
   box-sizing: border-box;
   border-radius: 8px;
-  color: #FF7D70;
-  margin-left:14px;
+  color: #ff7d70;
+  margin-left: 14px;
 }
 
 .btn-disabled {
@@ -64,8 +99,8 @@
   text-align: left;
 }
 
-.float-right{
-  float:right;
+.float-right {
+  float: right;
 }
 
 .btn-container {
@@ -80,7 +115,7 @@
   width: 100%;
   height: 10px;
   padding: 0;
-  background: #CCCCCC;
+  background: #cccccc;
   border-radius: 8px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -90,7 +125,7 @@
 .form-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  background: #FF7D70;
+  background: #ff7d70;
   width: 34px;
   height: 27px;
   border-radius: 8px;
@@ -102,63 +137,62 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x) * -.5);
-  margin-left: calc(var(--bs-gutter-x) * -.5);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
 }
 
-.col-100{
+.col-100 {
   flex: 0 0 auto;
   width: 100%;
 }
 
-.col-80{
+.col-80 {
   flex: 0 0 auto;
   width: 80%;
 }
 
-.col-75{
+.col-75 {
   flex: 0 0 auto;
   width: 75%;
 }
 
-.col-60{
+.col-60 {
   flex: 0 0 auto;
   width: 60%;
 }
 
-.col-50{
+.col-50 {
   flex: 0 0 auto;
   width: 50%;
 }
 
-.col-33{
+.col-33 {
   flex: 0 0 auto;
   width: 33%;
 }
 
-.col-25{
+.col-25 {
   flex: 0 0 auto;
   width: 25%;
 }
 
-.col-20{
+.col-20 {
   flex: 0 0 auto;
   width: 20%;
 }
 
-.col-10{
+.col-10 {
   flex: 0 0 auto;
   width: 10%;
 }
 
-.pr-20{
-  padding-right:20px
+.pr-20 {
+  padding-right: 20px;
 }
 
-.mt-10{
-  margin-top:10px;
+.mt-10 {
+  margin-top: 10px;
 }
-
 
 /* Text (Area)field */
 .input-group {
@@ -169,21 +203,21 @@
   margin-top: 1rem;
 }
 
-.form-control{
+.form-control {
   width: 225px;
   height: 34px;
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  background: #ffffff;
+  border: 1px solid #cccccc;
   box-sizing: border-box;
   border-radius: 8px;
   padding: 10px;
 }
 
-.form-control-area{
-  width:  320px;
+.form-control-area {
+  width: 320px;
   height: 159px;
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
+  background: #ffffff;
+  border: 1px solid #cccccc;
   border-radius: 8px;
   padding: 10px;
 }
@@ -194,11 +228,11 @@
   position: relative;
   padding-left: 45px;
   margin-bottom: 15px;
-  padding-top:5px;
+  padding-top: 5px;
   cursor: pointer;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   visibility: hidden;
 }
 
@@ -208,15 +242,14 @@ input[type=checkbox] {
   left: 0;
   height: 25px;
   width: 25px;
-  border: 1px solid #FF7D70;
+  border: 1px solid #ff7d70;
   border-radius: 8px;
 }
 
 .checkbox-input input:checked ~ .checkbox-text {
-  background-color: #FF7D70;
+  background-color: #ff7d70;
   border-radius: 8px;
 }
-
 
 /* list */
 
@@ -250,5 +283,5 @@ input[type=checkbox] {
 
 .division {
   height: 1px;
-  background-color: #CCCCCC;
+  background-color: #cccccc;
 }
