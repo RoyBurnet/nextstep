@@ -9,6 +9,9 @@ import TextField from "./components/textfield";
 import TextAreaField from "./components/textareafield";
 import List from "./components/list";
 
+import { render } from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 const mainObjective = [
   {
     text: "focussed",
@@ -24,18 +27,34 @@ export default function App() {
   return (
     <div className='App'>
       <Logo />
-      <Button text='focussed work' />
-      <Button text='collaborate with team' isActive={true} />
-      <Button text='brainstorming' isDisabled={true} />
-      <Option title='Main objective' options={mainObjective} />
-      <RangeSlider title='Maintenance' minText='Cool' maxText='Warm' />
-      <CheckBox title='Save this to a new profile' />
-      <TextField placeholder='Name a profile' />
-      <TextAreaField
-        title='Can you explain?'
-        placeholder='Write your message to us here'
-      />
-      <List />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={}>
+            <Route index element={<Home />} />
+            <Route path='teams' element={<Teams />}>
+              <Route path=':teamId' element={<Team />} />
+              <Route path='new' element={<NewTeamForm />} />
+              <Route index element={<LeagueStandings />} />
+            </Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      ,
     </div>
   );
 }
+
+
+
+      // <Button text='focussed work' />
+      // <Button text='collaborate with team' isActive={true} />
+      // <Button text='brainstorming' isDisabled={true} />
+      // <Option title='Main objective' options={mainObjective} />
+      // <RangeSlider title='Maintenance' minText='Cool' maxText='Warm' />
+      // <CheckBox title='Save this to a new profile' />
+      // <TextField placeholder='Name a profile' />
+      // <TextAreaField
+      //   title='Can you explain?'
+      //   placeholder='Write your message to us here'
+      // />
+      // <List />
