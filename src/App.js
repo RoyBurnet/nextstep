@@ -20,6 +20,8 @@ export default function App() {
       <Button text='brainstorming' isDisabled={true} />
       <Option title='Main objective' options={mainObjective} />
       <RangeSlider title='Maintenance' minText='Cool' maxText='Warm' />
+      <CheckBox title='Save this to a new profile'/>
+      <TextField placeholder='Name a profile'/>
     </div>
   );
 }
@@ -78,4 +80,24 @@ function Option({ title, options }) {
       </div>
     </div>
   );
+}
+
+function CheckBox({ title }){
+  return (
+    <div class="input-group">
+      <label class="checkbox-input">{title}
+          <input type="checkbox"/>
+          <span class="checkbox-text"></span>
+      </label>
+    </div>   
+  );
+}
+
+function TextField({ placeholder }){
+ return (
+  <div class="input-group">
+    <input type="text" placeholder={placeholder} class="form-control"/>
+    <button class="small-btn">Save</button>
+  </div>
+ );
 }
