@@ -10,14 +10,14 @@ const mainObjective = [
   },
   {
     text: "Focus",
-    isActive: true,
+    isActive: false,
   },
 ];
 
 const preferredWorkSpace = [
   {
     text: "Open space",
-    isActive: true,
+    isActive: false,
   },
   {
     text: "my own space",
@@ -25,7 +25,7 @@ const preferredWorkSpace = [
   },
 ];
 
-function secondPage() {
+function BetweenPage() {
   return (
     <React.Fragment>
       <Option title='Main objective' options={mainObjective} />
@@ -40,11 +40,11 @@ function secondPage() {
           text='Show me the results'
           isActive={true}
           hasNavigation={true}
-          path={"/last-page"}
+          path={"/third-page"}
         />
       </div>
     </React.Fragment>
   );
 }
 
-export default secondPage;
+export default BetweenPage;

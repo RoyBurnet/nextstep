@@ -54,6 +54,7 @@
 
 .subject {
   font-family: EDGEBOOK;
+  font-size: 14px;
 }
 
 .btn {
@@ -208,6 +209,18 @@
   margin-top:10px;
 }
 
+.small-text{
+  font-family:EDGETHIN;
+  font-size: 14px;
+}
+
+/* .range-slider{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 /* Text (Area)field */
 .input-group {
   position: relative;
@@ -244,6 +257,8 @@
   margin-bottom: 15px;
   padding-top: 5px;
   cursor: pointer;
+  font-size: 14px;
+  font-family: EDGEBOOK;
 }
 
 input[type="checkbox"] {
@@ -298,4 +313,9 @@ input[type="checkbox"] {
 .division {
   height: 1px;
   background-color: #cccccc;
+}
+
+.value {
+  margin-left: 10px;
+  font-size: 14px;
 }

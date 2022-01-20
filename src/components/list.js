@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./button";
 
-function List({ cta }) {
+function List({ cta, disabled }) {
   return (
     <>
       <div className='list-container'>
@@ -12,7 +12,7 @@ function List({ cta }) {
           </div>
           <div className='list-summary-item'>
             <span className='subject'>Space</span>{" "}
-            <span className='value'>c-suite</span>
+            <span className='value'> suite</span>
           </div>
           <div className='list-summary-item'>
             <span className='subject'>Desk</span>{" "}
@@ -21,8 +21,23 @@ function List({ cta }) {
         </div>
         {cta ? (
           <div className='select-btn'>
-            <Button text='select this spot' isActive={true} />
+            <Button
+              text='select this spot'
+              isActive={true}
+              hasNavigation={true}
+              path={"/last-page"}
+            />
           </div>
+        ) : (
+          ""
+        )}
+        {disabled ? (
+          <>
+            {" "}
+            <div className='select-btn'>
+              <Button text='select this spot' isDisabled={true} />
+            </div>
+          </>
         ) : (
           ""
         )}
