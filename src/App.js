@@ -11,6 +11,7 @@ import List from "./components/list";
 
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import FirstPage from "./pages/firstPage";
 
 const mainObjective = [
   {
@@ -26,20 +27,15 @@ const mainObjective = [
 export default function App() {
   return (
     <div className='App'>
-      <Logo />
+      <div className='header'>
+        <Logo />
+        <div className="intro">Goodmorning<br /> welcome at EDGE Olympic!</div>
+      </div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={}>
-            <Route index element={<Home />} />
-            <Route path='teams' element={<Teams />}>
-              <Route path=':teamId' element={<Team />} />
-              <Route path='new' element={<NewTeamForm />} />
-              <Route index element={<LeagueStandings />} />
-            </Route>
-          </Route>
+          <Route path='/' element={<FirstPage />}></Route>
         </Routes>
       </BrowserRouter>
-      ,
     </div>
   );
 }
