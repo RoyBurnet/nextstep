@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./../components/button";
-import RangeSlider from "./../components/rangeslider";
-import Option from "./../components/option";
+import Button from "../components/button";
+import RangeSlider from "../components/rangeslider";
+import Option from "../components/option";
 
 const mainObjective = [
     {
@@ -25,7 +25,7 @@ const mainObjective = [
     },
   ];
 
-function Page2() {
+function secondPage() {
   return (
     <React.Fragment>
         <Option title='Main objective' options={mainObjective} />
@@ -40,4 +40,4 @@ function Page2() {
   );
 }
 
-export default Page2;
+export default secondPage;

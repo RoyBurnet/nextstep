@@ -1,9 +1,9 @@
 import React from "react";
-import CheckBox from "./../components/checkbox";
-import TextField from "./../components/textfield";
-import List from "./../components/list";
+import CheckBox from "../components/checkbox";
+import TextField from "../components/textfield";
+import List from "../components/list";
 
-function Page3() {
+function thirdPage() {
   return (
     <React.Fragment>
         <p className='text mt-10'>Here are the best options for you:</p>
@@ -15,4 +15,4 @@ function Page3() {
   );
 }
 
-export default Page3;
+export default thirdPage;
