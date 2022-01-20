@@ -22,7 +22,8 @@ export default function App() {
       <RangeSlider title='Maintenance' minText='Cool' maxText='Warm' />
       <CheckBox title='Save this to a new profile'/>
       <TextField placeholder='Name a profile'/>
-      <TextAreaField title='Can you explain?' placeholder='Write your message to us here'/>
+      <TextAreaField title='Can you explain?' placeholder='Write your message to us here' />
+      <List/>
     </div>
   );
 }
@@ -125,5 +126,32 @@ function TextAreaField({ title, placeholder }){
       <textarea placeholder={placeholder} class="form-control-area"/>
       <button class="small-btn float-right mt-10">Send</button>
     </div>
+  );
+}
+
+function List() {
+  return (
+    <>
+      <div className='list-container'>
+        <div className='list-summary'>
+          <div className='list-summary-item'>
+            <span className='subject'>Floor</span>{" "}
+            <span className='value'>4</span>
+          </div>
+          <div className='list-summary-item'>
+            <span className='subject'>Floor</span>{" "}
+            <span className='value'>4</span>
+          </div>
+          <div className='list-summary-item'>
+            <span className='subject'>Floor</span>{" "}
+            <span className='value'>4</span>
+          </div>
+        </div>
+        <div className='select-btn'>
+          <Button text='select this spot' isActive={true} />
+        </div>
+      </div>
+      <div className='division'></div>
+    </>
   );
 }
