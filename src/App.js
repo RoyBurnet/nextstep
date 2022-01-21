@@ -4,7 +4,7 @@ import Logo from "./components/logo";
 
 
 import { render } from "react-dom";
-import { BrowserRouter, Routes, Route , Link} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import FirstPage from "./pages/firstPage";
 import LastPage from './pages/lastPage';
 import SecondPage from './pages/secondPage';

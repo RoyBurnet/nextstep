@@ -130,6 +130,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  flex: 2
 }
 
 .form-range::-webkit-slider-thumb {
@@ -211,7 +212,8 @@
 
 .small-text{
   font-family:EDGETHIN;
-  font-size: 14px;
+  font-size: 12px;
+  flex: 1;
 }
 
 /* .range-slider{
@@ -318,4 +320,28 @@ input[type="checkbox"] {
 .value {
   margin-left: 10px;
   font-size: 14px;
+}
+
+
+/* new range*/
+
+.range-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.range-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider {
+
+}
+
+.slide-container{
+  /* width: 80%; */
+  flex: 3
 }
